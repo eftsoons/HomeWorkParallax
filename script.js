@@ -81,7 +81,7 @@ function funmainTriangle4(scroll) {
   mainTriangle4.style.right = `${GetResultDivisions(
     scroll,
     MaxScroll,
-    80,
+    130,
     -934
   )}px`;
 }

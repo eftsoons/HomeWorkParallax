@@ -5,11 +5,11 @@
 
 body {
   overflow-y: scroll;
-  background-color: rgba(255, 255, 255, 1);
+  background-color: rgb(255, 255, 255);
   width: 100%;
   height: 200vh;
-  -ms-overflow-style: none;
   scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 ::-webkit-scrollbar {
@@ -25,7 +25,7 @@ header {
   width: calc(100% - 160px);
   padding-top: 39px;
   padding-inline: 80px;
-  z-index: 1;
+  z-index: 3;
 }
 
 main {
@@ -53,8 +53,8 @@ input[type="reset"] {
   right: 27px;
   height: 92px;
   width: 21px;
-  z-index: 2;
   cursor: pointer;
+  z-index: 4;
 }
 
 .main-square-top {
@@ -63,55 +63,115 @@ input[type="reset"] {
   height: 485px;
   left: 179px;
   top: -663px;
-  /* top: -351px; */
   background: #00a198;
   border-radius: 32px;
   transform: rotate(-30deg);
+  z-index: 3;
 }
 
 .main-sun {
   position: fixed;
   top: 34%;
   right: 9.4375%;
-  /* top: 50%;
-  right: 50%; */
   transform: translate(9.4375%, -34%);
-  z-index: -1;
   width: 196px;
   height: 196px;
+}
+
+.main-sun-curcle {
+  position: fixed;
+  width: 196px;
+  height: 196px;
+  left: 1282.53px;
+  top: 384.31px;
+  fill: #ff4661;
+}
+
+.main-sun-square-1 {
+  width: 72px;
+  height: 30px;
+  position: fixed;
+  left: 1151px;
+  top: 407.43px;
+  fill: #01a07f;
+  border-radius: 5px;
+}
+
+.main-sun-square-2 {
+  width: 69px;
+  height: 92px;
+
+  position: fixed;
+  left: 1230.57px;
+  top: 275px;
+  fill: #01a07f;
+  border-radius: 5px;
+}
+
+.main-sun-square-3 {
+  width: 24px;
+  height: 71px;
+
+  position: fixed;
+  left: 1398.56px;
+  top: 277.56px;
+  fill: #01a07f;
+  border-radius: 5px;
+}
+
+.main-circle-blue {
+  position: fixed;
+  width: 2261px;
+  height: 2261px;
+  left: 900px;
+  top: 304px;
+  fill: #2570c7;
 }
 
 .main-triangle-1 {
   position: fixed;
   width: 1157.68px;
   height: 1967px;
-  left: -761px;
-  top: -126.89px;
-  background: #ffc200;
+  left: calc(50% - 1157.68px / 2 - 929.16px);
+  top: 39px;
+  fill: #ffc200;
   border-radius: 41px;
   transform: rotate(-3.36deg);
+  z-index: 2;
 }
 
 .main-triangle-2 {
   position: fixed;
   width: 703px;
   height: 1967px;
-  left: 102.02px;
-  top: -126.89px;
-  background: #ffc200;
+  left: calc(50% - 703px / 2 - 346.48px);
+  top: -74px;
+  fill: #ffc200;
   border-radius: 41px;
   transform: rotate(-3.36deg);
+  z-index: 2;
 }
 
 .main-triangle-3 {
   position: fixed;
   width: 703px;
   height: 921px;
-  left: 50%;
-  transform: translate(-50%, 0);
+  left: calc(50% - 703px / 2 + 0.5px);
   top: 468px;
-  background: #ffabc9;
-  border-radius: 41px;
+  fill: #ffabc9;
+  border-radius: 41px; /* Polygon 1 */
+}
+
+.main-triangle-4 {
+  position: fixed;
+  width: 934.14px;
+  height: 934.14px;
+  right: -934px;
+  bottom: -60px;
+  fill: #ffc200;
+  border-radius: 21px;
+  transform: rotate(-15deg);
+  z-index: 3;
 }
 
 .page1-text {
@@ -123,6 +183,7 @@ input[type="reset"] {
   align-items: center;
   gap: 25px;
   transform: translate(-50%, -50%);
+  z-index: 4;
 }
 
 .page2-text {
@@ -135,6 +196,7 @@ input[type="reset"] {
   gap: 25px;
   transform: translate(-50%, -50%);
   opacity: 0;
+  z-index: 4;
 }
 
 .page1-text-heading {
@@ -183,4 +245,18 @@ input[type="reset"] {
 
 .pink {
   color: rgba(255, 70, 97, 1);
+}
+
+.main-img-mario {
+  position: fixed;
+  top: 100%;
+  left: -1px;
+  z-index: 3;
+}
+
+.main-img-dragon {
+  position: fixed;
+  left: calc(100% - 0px);
+  bottom: 0;
+  z-index: 3;
 }
